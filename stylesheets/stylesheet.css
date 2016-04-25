@@ -10,10 +10,16 @@ body {
 
 /* General & 'Reset' Stuff */
 
-.container {
+.header{
   width: 90%;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 0 100px;
 }
 
 section {
@@ -28,6 +34,32 @@ h1, h2, h3, h4, h5, h6 {
 li {
   line-height: 1.4 ;
 }
+
+
+/*
+  Navigation bar
+*/
+.nav ul{
+  text-align: center;
+  margin-left: -250px;
+}
+
+.nav li {
+  color: #eaeaea;
+  display: inline;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 20px;
+
+  /*margin-left: 100px;*/
+  /*text-align: right;*/
+}
+
+.nav a:link {
+  text-decoration: none;
+  color: white;
+}
+
 
 /* Header, <header>
    header   - container
@@ -57,10 +89,10 @@ header h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-header h1:before {
-  content: "./ ";
+/*header h1:before {
+  content: "./";
   font-size: 24px;
-}
+}*/
 
 header h2 {
   font-size: 18px;
@@ -81,6 +113,8 @@ header h2 {
   width: 100%;
   -webkit-font-smoothing: antialiased;
 }
+
+
 section img {
   max-width: 100%
 }
@@ -124,6 +158,43 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 5px 0;
 }
 
+/*projects links style*/
+
+#main_content #projects a:link{
+  color: white;
+  text-decoration: none;
+
+}
+
+#main_content #projects ul li:before {
+  content: ">>";
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 13px;
+  color: #b5e853;
+  margin-left: -37px;
+  margin-right: 21px;
+  line-height: 16px;
+}
+
+
+/* project links style end */
+
+/* project documentation links style */
+#main_content #project_doc a:link{
+  color: white;
+  text-decoration: none;
+}
+
+#main_content #project_doc ul li:before{
+  content: ">>";
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-size: 13px;
+  color: #b5e853;
+  margin-left: -37px;
+  margin-right: 21px;
+  line-height: 16px;
+}
+
 dt {
   font-style: italic;
   font-weight: bold;
@@ -133,7 +204,7 @@ ul li {
   list-style: none;
 }
 
-ul li:before {
+/*ul li:before {
   content: ">>";
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   font-size: 13px;
@@ -141,7 +212,7 @@ ul li:before {
   margin-left: -37px;
   margin-right: 21px;
   line-height: 16px;
-}
+}*/
 
 blockquote {
   color: #aaa;
@@ -158,7 +229,7 @@ pre {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  text-wrap: normal;
+  /*text-wrap: normal;*/
   overflow: auto;
   overflow-y: hidden;
 }
